@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unload Stock</title>
+        <style>
+            body{
+                background-image: url();
+                background-size: cover;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .main_navigation{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 20%;
+                height: 100vh;
+                background-color: rgb(122, 122, 122);
+                
+
+            }
+            .btn{
+                background-color: transparent;
+                position: relative;
+                width: 100%;
+                height: 10%;;
+                border: none;
+                font-family: Arial;
+                font-size: large;
+                font: bold;
+                border-radius: 20px;
+            }
+            .btn:hover{
+                background-color: rgb(112, 112, 112);
+            }
+            .btn:active{
+                background-color: rgb(102, 102, 102);
+
+            }
+            .main_menu{
+                position: absolute;
+                left:20%;
+                top: 0px;
+                height: 15%;
+                width: 80%;
+                background-color: rgb(168, 168, 168);
+            }  
+            .table_div{
+                position: absolute;
+                width: 80%;
+                height: 85vh;
+                left: 22%;
+                top: 15%;
+            }
+            .table_div2{
+                position: absolute;
+                width: 50%;
+                left: 40%;
+                top: 5%;
+            }
+            .input_div{
+                position: absolute;
+                left: 0%;
+                top: 5%;
+                width: 30%;
+                height: 50vh;
+                border-radius: 20px;
+                background-color: rgb(122, 122, 122);
+            }
+            .output_div{
+                position: relative;
+                margin-top: 3%;
+                width: 100%;
+                height: 20vh;
+                border-radius: 20px;
+                background-color: rgb(122, 122, 122);
+                text-align: center;
+
+            }
+            table, tr, td{
+                border: solid;  
+                border-style:groove;
+            }
+            table{
+                position: relative;
+                top: 0%;
+                width: 100%;
+                height: 10vh;
+            }
+            th{
+                height: 40px;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="main_navigation">
+            <a href="Inventory.html">
+                <button class="btn">Main Menu</button>
+            </a>
+
+            <a href="1.html">
+                <button class="btn">View Storage</button>
+            </a>
+
+            <a href="2.html">
+                <button class="btn">Search Product /  View Product Batches</button>
+            </a>
+
+            <a href="3.html">
+                <button class="btn">Load Stock</button>
+            </a>
+
+            <a href="4.html">
+                <button class="btn">Unload Stock</button>
+            </a>
+            
+            <a href="5.html">
+                <button class="btn">Update Product</button>
+            </a>
+
+            <a href="6.html">
+                <button class="btn">Add Product</button>
+            </a>
+            
+            <a href="7.html">
+                <button class="btn">Remove Product</button>
+            </a>
+
+            <a href="8.html">
+                <button class="btn"> View Expiring Products</button>
+            </a>
+
+            <a href="9.html">
+                <button class="btn">View Expired Products</button>
+            </a>
+
+        </div>
+
+        <div class="main_menu">
+            <h1 style="position: relative; text-align: center; top: 30%;">Unload Stock</h1>
+        </div>
+        <div class="table_div">
+            <div class="input_div">
+                
+                <h4 style="position: absolute; left: 10%; top: 22%;">Quantity </h4>
+                  <input style="position: absolute ; left: 40%; top:21%; width: 150px; height: 30px; border-radius: 5px; " placeholder="20" type="number">
+                <h4 style="position: absolute; left: 6%; top: 42%;">Batch Index</h4>
+                  <input style="position: absolute ; left: 40%; top:41%; width: 150px; height: 30px; border-radius: 5px; " placeholder="1" type="number">
+                <a href="4.4.html">
+                  <button style="position: absolute; left: 30%; top: 62%; width: 40%; height: 10vh; border-radius: 10px; background-color:rgb(202, 201, 201) ;">UNLOAD</button>
+                </a>
+            </div>
+
+        <div class="table_div2">
+            <table style="text-align: center;">
+                    <caption style="font-weight: bold;">ARIEL</caption>
+                    <tr>
+                        <th>Batch</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Expiration Date<br> MM-DD-YYYY</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Ariel</td>
+                        <td>60</td>
+                        <td>01-15-2026</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ariel</td>
+                        <td>30</td>
+                        <td>11-30-2027</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ariel</td>
+                        <td>45</td>
+                        <td>03-22-2028</td>
+                    </tr>
+                    
+                </table>
+                <div class="output_div">
+                <h2 style="position: relative; top: 35%;">20 of Ariel Has Been Unloaded</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
